@@ -3,9 +3,8 @@ $(document).ready(function() {
 		console.log(e);
 		$(this).val();
 		var text = $(this).val();
-		console.log(text);
-			//Fetch the value of the keyup event 
-			//insert that value into my <div> with the .html() method
+		console.log(text); 
+			$("#output").html(text);
 			//think about how I want the text to be transformed...fadeIn, upside down,
 	})
 
