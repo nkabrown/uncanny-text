@@ -1,26 +1,53 @@
-$(document).ready(function() {
+$(document).ready(function() { 
 	$("#input").on('keyup', function(e) {
-		console.log(e);
 		$(this).val();
 		var text = $(this).val();
 		console.log(text); 
 			$("#output").html(text);
+	
+			/*var value = String.fromCharCode(e.charCode);
+	
+			function mix (text) {
+				if(e.charCode >= 65 && e.charCode <= 122){
+					$("#output").css({
+						"color": "#e32636"
+					});
+				}
+
+				else if(e.charCode >= 48 && e.charCode <= 57) {
+					$("#output").css({
+						"color": "#87A96B"
+					});
+				}
+			};
+
+			mix();*/
+	});
+
+	$("#output").on('click', function() {
+		$("#output").fadeOut(50000);
+	});
+	
+	
 
 			/*$(function(){
 				$("#output").on('click')
 			})*/
 
 
-			/*	$("#output").append("<span id='new'>"+text+"</span>");
+			//$("#output").append("<span id='new'>"+text+"</span>");
 
-			var uncanny = $("#output").append("<span id='new'>"+text+"</span>");
+			//var uncanny = $("#output").append("<span id='new'>"+text+"</span>");
 				
 			
-			function erase() {
-
-					$("span").fadeOut(1000);
-					$("span").remove();			
-			}
+			/*function erase(text) {
+					var removeSpan = document.getElementById("new");
+					var containerDiv = removeSpan.parentNode;
+					containderDiv.removeChild(removeSpan);
+					
+					//$("#new").fadeOut(1000);
+					//$("#new").remove();			
+			};
 
 			
 			erase();	
@@ -55,7 +82,7 @@ $(document).ready(function() {
         		if (c >= q.length) clearInterval(i);
     			}, 1000);*/
 			//think about how I want the text to be transformed...fadeIn, upside down,
-	});
+	//});
 
 
 });
