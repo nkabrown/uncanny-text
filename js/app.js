@@ -28,7 +28,10 @@ $(document).ready(function() {
 		$("#output").fadeOut(50000);
 	});
 	
-	
+	$("h1").on('mouseover', function(){
+		//turn string into an array and hide the index #s associated with "a" and "e"
+
+	});
 
 			/*$(function(){
 				$("#output").on('click')

@@ -33,8 +33,14 @@ h1 {
 
 #tagline {
 	position: absolute;
-	right: 225px;
+	text-align: center;
+	color: #FF0800;
+	text-shadow: 1px 2px 2px #e3e3e3;
+	width: 385px;
+	height: 25px;
+	right: 120px;
 	top: 175px;
+	
 }
 
 #output {
